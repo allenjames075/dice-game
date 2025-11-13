@@ -1,5 +1,6 @@
 .container {
-  width: 70%;
+  width: 90%;        /* use almost full width on small screens */
+  max-width: 1200px; /* keep it reasonable on large screens */
   margin: auto;
   text-align: center;
 }
@@ -20,7 +21,7 @@
   gap: 20px;
   justify-items: center;
   align-items: center;
-  margin-top: 30px;
+  /*margin-top: 30px;*/
 }
 
 .btn-container {
@@ -30,8 +31,12 @@
 }
 
 @media (min-width: 768px) {
-  .dice-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 dice side by side */
+  h1 {
+    font-size: 6rem;
+  }
+  
+  p {
+    font-size: 2rem;
   }
 }
 
@@ -40,10 +45,10 @@ body {
 }
 
 h1 {
-  margin: 30px;
+  margin: 30px 10px;
   font-family: 'Luckiest Guy', cursive;
   text-shadow: 4px 0 #EFECE3; 
-  font-size: 6rem;
+  font-size: 4rem;
   color: #4A70A9;
 }
 
@@ -54,7 +59,9 @@ p {
 }
 
 img {
-  width: 50%;
+  width: 80%;
+  max-width: 150px;  /* limits size on desktop */
+  height: auto;
 }
 
 footer {
@@ -69,8 +76,8 @@ button {
   background-color: #8FABD4;
   display: inline-block;
   color: #000000;
-  font-size: 1.2rem;
-  padding: 10px 20px;
+  font-size: 1rem;
+  padding: 10px 16px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
